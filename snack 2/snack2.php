@@ -5,8 +5,16 @@
 
 <?php
     $name= $_GET["name"];
+    
+    if (strlen($name) >= 3){
+        echo "Acceso corretto";
+    } else {
+        echo "Non valido";
+    };
+    
     $mail= $_GET["mail"];
     $age= $_GET["age"];
+
 ?>
 
 <!DOCTYPE html>

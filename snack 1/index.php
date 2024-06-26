@@ -6,20 +6,26 @@ Olimpia Milano - Cantù | 55-60*/
 
 $partite =  [
     [
-        "squadraCasa" => "Inter",
-        "squadraOspite" => "Milan",
+        "squadraCasa" => "Inter ",
+        "squadraOspite" => "Milan ",
+        "puntiCasa" => 0,
+        "puntiOspite" => 0
     ],
 
     [
-        "squadraCasa" => "Lazio",
-        "squadraOspite" => "Juventus",
+        "squadraCasa" => "Lazio ",
+        "squadraOspite" => "Juventus ",
+        "puntiCasa" => 0,
+        "puntiOspite" => 0
     ],
 
     [
-        "squadraCasa" => "Napoli",
-        "squadraOspite" => "Roma",
+        "squadraCasa" => "Napoli ",
+        "squadraOspite" => "Roma ",
+        "puntiCasa" => 0,
+        "puntiOspite" => 0
     ]
-        ];
+];
 
 ?>
 
@@ -32,12 +38,38 @@ $partite =  [
 </head>
 <body>
     <h1>
-        <?php echo $partite["puntiCasa"] = rand(1, 60);
+        <?php 
+        
+        foreach ($partite as $squadra){
+            echo $squadra["squadraCasa"];
+        }
+        
         ?>
     </h1>
 
-    <h1>
-        <?php echo $partite["puntiOspite"] = rand(1, 60); ?>
-    </h1>
+    <h2>
+        <?php 
+            foreach ($partite as $squadraOspite){
+                echo $squadraOspite["squadraOspite"];
+            }
+        ?>
+        
+    </h2>
+    
+    <h3>
+    <?php 
+        foreach ($partite as $punti){
+            echo $punti["puntiCasa"] = rand(1, 60) . " ";
+        }
+        ?>
+    </h3>
+
+    <h3>
+        <?php 
+        foreach ($partite as $punti){
+            echo $punti["puntiOspite"] = rand(1, 60) . " ";
+        }
+        ?>
+    </h3>
 </body>
 </html>

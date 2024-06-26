@@ -3,6 +3,20 @@
 
 $titleHeader= "Snack 4";
 
+$numeriArray = [ ];
+
+$blackNumber = [ ];
+
+for ($i = 0; $i <= 15; $i++) {
+    $numeriRandom = rand(1, 100) . " ";
+    array_push($numeriArray, $numeriRandom);
+    echo $numeriArray[$i];
+
+    if (in_array($numeriRandom, $numeriArray)){
+        echo array_push($blackNumber, $numeriRandom);
+    }
+};
+
 ?>
 
 <!DOCTYPE html>

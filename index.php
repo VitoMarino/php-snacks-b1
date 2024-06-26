@@ -23,4 +23,3 @@ $partite = [
 echo $partite["puntiCasa"] = rand(1, 60);
 echo $partite["puntiOspite"] = rand(1, 60);
 
-?>

@@ -9,16 +9,17 @@ include_once __DIR__ . "/voti.php";
 $alunni = [
     "nome" => "Gino",
     "cognome" => "Ginotti",
+    $votiAlunni['votoUno'],
 
     "nome" => "Gina",
     "cognome" => "Ginassi",
+    $votiAlunni['votoDue'],
 
     "nome" => "Giovy",
     "cognome" => "Giovanotti",
+    $votiAlunni['votoTre']
 ];
 
 var_dump($alunni);
-
-var_dump($votiAlunni);
 
 ?>
